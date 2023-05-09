@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Login Form Design</title>
+            <link rel="stylesheet" type="text/css" href="style.css">
+        <body>
+            <div class="loginbox">
+                <img src="Avatar.png" class="Avatar">
+                <h1>Login Here</h1>
+                <form>
+                    <p>Username</p>
+                    <input type="text" name="" placeholder="Enter Username">
+                    <p>Password</p>
+                    <input type="password" name="" placeholder="Enter password"><br>
+                    <input type="Submit" name="" value="Login" class="submit-btn" onclick= "Intern()"><br>
+                    <a href="#">Forgot Password?</a><br>
+                    <a href="#">Don't have an account?</a>
+                    
+                </form>
+            </div>  
+            <script>
+                function Intern()
+                {
+                    var Username = document.form["item"]["Username"].value
+                    var Password = document.form["item"]["Password"].value
+                if (Username=="stu" && Password=="123")
+                {
+                    window.location.assign("Welcome.html");
+                    alert("Login Successful");
+                }
+                else
+                {
+                    alert("Invalid Username and Password")
+                    return;
+                }
+                }
+            </script>
+        </body>
+    </head>
+</html>
